@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .title {
   color: #53c38b;
   font-size: 22px;
@@ -8,6 +13,10 @@
   gap: 50px;
   justify-content: center;
   align-items: center;
+}
+
+.content:nth-child(2n + 1) {
+  flex-direction: row-reverse;
 }
 
 .imgContainer {

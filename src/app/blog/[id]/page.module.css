@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.topContainer {
+  flex: 1;
+  display: flex;
+  gap: 50px;
+}
+
+.imgContainer {
+  flex: 1;
+  height: 250px;
+  position: relative;
+}
+
+.desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 44px;
+}
+
+.author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.authImage {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 999px;
+}
