@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './page.module.css'
 import cowork from '/public/coworking.jpg'
 import Image from 'next/image'
+import Button from '@/components/Button/Button'
 
 const About = () => {
     return (
@@ -16,7 +17,7 @@ const About = () => {
             <div className={styles.TextContainer}>
                 <div className={styles.item}>
                     <h1 className={styles.itemTitle}>who Are We?</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non.
+                    <p className={styles.itemDesc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non.
                         Accusamus quas id sint unde sit eveniet magni ipsa, numquam obcaecati
                         sequi possimus at quibusdam, eligendi officia aperiam nobis ex?
                         <br /><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non.
@@ -25,7 +26,7 @@ const About = () => {
                 </div>
                 <div className={styles.item}>
                     <h1 className={styles.itemTitle}>What Do We Do?</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non.
+                    <p className={styles.itemDesc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, non.
                         Accusamus quas id sint unde sit eveniet magni ipsa, numquam obcaecati
                         sequi possimus at quibusdam, eligendi officia aperiam nobis ex?
                         <br /><br /></p>
@@ -34,6 +35,7 @@ const About = () => {
                         <li>Dynamic Websites</li>
                         <li>Fast and Handy Mobile Apps</li>
                     </ul>
+                    <Button url="/contact" text="Contact Us" />
                 </div>
             </div>
         </div >

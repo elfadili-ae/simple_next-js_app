@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 60px;
+  color: #bbb;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.imgContainer {
+  flex: 1;
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.image {
+  object-fit: contain;
+  animation: bounce 3s ease infinite alternate;
+}
+
+.form {
+  padding: 12px 22px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input,
+.textArea {
+  font-size: 16px;
+  padding: 8px;
+  background-color: transparent;
+  color: #bbb;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  outline: none;
+}
+.input:focus,
+.textArea:focus {
+  border-color: #53c38b;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: translateY(0px);
+    scale: 1.02;
+  }
+}
